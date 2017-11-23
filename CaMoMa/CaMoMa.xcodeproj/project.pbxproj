@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DBEAF7FC1FC670F9008B62DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEAF7FB1FC670F9008B62DB /* AppDelegate.swift */; };
+		DBEAF7FE1FC670F9008B62DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEAF7FD1FC670F9008B62DB /* ViewController.swift */; };
+		DBEAF8011FC670F9008B62DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBEAF7FF1FC670F9008B62DB /* Main.storyboard */; };
+		DBEAF8041FC670F9008B62DB /* CaMoMa.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DBEAF8021FC670F9008B62DB /* CaMoMa.xcdatamodeld */; };
+		DBEAF8061FC670F9008B62DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBEAF8051FC670F9008B62DB /* Assets.xcassets */; };
+		DBEAF8091FC670F9008B62DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBEAF8071FC670F9008B62DB /* LaunchScreen.storyboard */; };
+		DBEAF8141FC670FA008B62DB /* CaMoMaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEAF8131FC670FA008B62DB /* CaMoMaTests.swift */; };
+		DBEAF81F1FC670FA008B62DB /* CaMoMaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEAF81E1FC670FA008B62DB /* CaMoMaUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DBEAF8101FC670FA008B62DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DBEAF7F01FC670F9008B62DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DBEAF7F71FC670F9008B62DB;
+			remoteInfo = CaMoMa;
+		};
+		DBEAF81B1FC670FA008B62DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DBEAF7F01FC670F9008B62DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DBEAF7F71FC670F9008B62DB;
+			remoteInfo = CaMoMa;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DBEAF7F81FC670F9008B62DB /* CaMoMa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CaMoMa.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBEAF7FB1FC670F9008B62DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DBEAF7FD1FC670F9008B62DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DBEAF8001FC670F9008B62DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DBEAF8031FC670F9008B62DB /* CaMoMa.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CaMoMa.xcdatamodel; sourceTree = "<group>"; };
+		DBEAF8051FC670F9008B62DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DBEAF8081FC670F9008B62DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DBEAF80A1FC670F9008B62DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBEAF80F1FC670FA008B62DB /* CaMoMaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CaMoMaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBEAF8131FC670FA008B62DB /* CaMoMaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaMoMaTests.swift; sourceTree = "<group>"; };
+		DBEAF8151FC670FA008B62DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBEAF81A1FC670FA008B62DB /* CaMoMaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CaMoMaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBEAF81E1FC670FA008B62DB /* CaMoMaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaMoMaUITests.swift; sourceTree = "<group>"; };
+		DBEAF8201FC670FA008B62DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DBEAF7F51FC670F9008B62DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBEAF80C1FC670FA008B62DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBEAF8171FC670FA008B62DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DBEAF7EF1FC670F9008B62DB = {
+			isa = PBXGroup;
+			children = (
+				DBEAF7FA1FC670F9008B62DB /* CaMoMa */,
+				DBEAF8121FC670FA008B62DB /* CaMoMaTests */,
+				DBEAF81D1FC670FA008B62DB /* CaMoMaUITests */,
+				DBEAF7F91FC670F9008B62DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DBEAF7F91FC670F9008B62DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DBEAF7F81FC670F9008B62DB /* CaMoMa.app */,
+				DBEAF80F1FC670FA008B62DB /* CaMoMaTests.xctest */,
+				DBEAF81A1FC670FA008B62DB /* CaMoMaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DBEAF7FA1FC670F9008B62DB /* CaMoMa */ = {
+			isa = PBXGroup;
+			children = (
+				DBEAF7FB1FC670F9008B62DB /* AppDelegate.swift */,
+				DBEAF7FD1FC670F9008B62DB /* ViewController.swift */,
+				DBEAF7FF1FC670F9008B62DB /* Main.storyboard */,
+				DBEAF8051FC670F9008B62DB /* Assets.xcassets */,
+				DBEAF8071FC670F9008B62DB /* LaunchScreen.storyboard */,
+				DBEAF80A1FC670F9008B62DB /* Info.plist */,
+				DBEAF8021FC670F9008B62DB /* CaMoMa.xcdatamodeld */,
+			);
+			path = CaMoMa;
+			sourceTree = "<group>";
+		};
+		DBEAF8121FC670FA008B62DB /* CaMoMaTests */ = {
+			isa = PBXGroup;
+			children = (
+				DBEAF8131FC670FA008B62DB /* CaMoMaTests.swift */,
+				DBEAF8151FC670FA008B62DB /* Info.plist */,
+			);
+			path = CaMoMaTests;
+			sourceTree = "<group>";
+		};
+		DBEAF81D1FC670FA008B62DB /* CaMoMaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DBEAF81E1FC670FA008B62DB /* CaMoMaUITests.swift */,
+				DBEAF8201FC670FA008B62DB /* Info.plist */,
+			);
+			path = CaMoMaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DBEAF7F71FC670F9008B62DB /* CaMoMa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBEAF8231FC670FA008B62DB /* Build configuration list for PBXNativeTarget "CaMoMa" */;
+			buildPhases = (
+				DBEAF7F41FC670F9008B62DB /* Sources */,
+				DBEAF7F51FC670F9008B62DB /* Frameworks */,
+				DBEAF7F61FC670F9008B62DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CaMoMa;
+			productName = CaMoMa;
+			productReference = DBEAF7F81FC670F9008B62DB /* CaMoMa.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DBEAF80E1FC670FA008B62DB /* CaMoMaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBEAF8261FC670FA008B62DB /* Build configuration list for PBXNativeTarget "CaMoMaTests" */;
+			buildPhases = (
+				DBEAF80B1FC670FA008B62DB /* Sources */,
+				DBEAF80C1FC670FA008B62DB /* Frameworks */,
+				DBEAF80D1FC670FA008B62DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DBEAF8111FC670FA008B62DB /* PBXTargetDependency */,
+			);
+			name = CaMoMaTests;
+			productName = CaMoMaTests;
+			productReference = DBEAF80F1FC670FA008B62DB /* CaMoMaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DBEAF8191FC670FA008B62DB /* CaMoMaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBEAF8291FC670FA008B62DB /* Build configuration list for PBXNativeTarget "CaMoMaUITests" */;
+			buildPhases = (
+				DBEAF8161FC670FA008B62DB /* Sources */,
+				DBEAF8171FC670FA008B62DB /* Frameworks */,
+				DBEAF8181FC670FA008B62DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DBEAF81C1FC670FA008B62DB /* PBXTargetDependency */,
+			);
+			name = CaMoMaUITests;
+			productName = CaMoMaUITests;
+			productReference = DBEAF81A1FC670FA008B62DB /* CaMoMaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DBEAF7F01FC670F9008B62DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = TranNgocTam;
+				TargetAttributes = {
+					DBEAF7F71FC670F9008B62DB = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					DBEAF80E1FC670FA008B62DB = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DBEAF7F71FC670F9008B62DB;
+					};
+					DBEAF8191FC670FA008B62DB = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DBEAF7F71FC670F9008B62DB;
+					};
+				};
+			};
+			buildConfigurationList = DBEAF7F31FC670F9008B62DB /* Build configuration list for PBXProject "CaMoMa" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DBEAF7EF1FC670F9008B62DB;
+			productRefGroup = DBEAF7F91FC670F9008B62DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DBEAF7F71FC670F9008B62DB /* CaMoMa */,
+				DBEAF80E1FC670FA008B62DB /* CaMoMaTests */,
+				DBEAF8191FC670FA008B62DB /* CaMoMaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DBEAF7F61FC670F9008B62DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBEAF8091FC670F9008B62DB /* LaunchScreen.storyboard in Resources */,
+				DBEAF8061FC670F9008B62DB /* Assets.xcassets in Resources */,
+				DBEAF8011FC670F9008B62DB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBEAF80D1FC670FA008B62DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBEAF8181FC670FA008B62DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DBEAF7F41FC670F9008B62DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBEAF7FE1FC670F9008B62DB /* ViewController.swift in Sources */,
+				DBEAF8041FC670F9008B62DB /* CaMoMa.xcdatamodeld in Sources */,
+				DBEAF7FC1FC670F9008B62DB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBEAF80B1FC670FA008B62DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBEAF8141FC670FA008B62DB /* CaMoMaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBEAF8161FC670FA008B62DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBEAF81F1FC670FA008B62DB /* CaMoMaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DBEAF8111FC670FA008B62DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DBEAF7F71FC670F9008B62DB /* CaMoMa */;
+			targetProxy = DBEAF8101FC670FA008B62DB /* PBXContainerItemProxy */;
+		};
+		DBEAF81C1FC670FA008B62DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DBEAF7F71FC670F9008B62DB /* CaMoMa */;
+			targetProxy = DBEAF81B1FC670FA008B62DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DBEAF7FF1FC670F9008B62DB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBEAF8001FC670F9008B62DB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DBEAF8071FC670F9008B62DB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBEAF8081FC670F9008B62DB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DBEAF8211FC670FA008B62DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DBEAF8221FC670FA008B62DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DBEAF8241FC670FA008B62DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CaMoMa/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tamtn.CaMoMa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DBEAF8251FC670FA008B62DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CaMoMa/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tamtn.CaMoMa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DBEAF8271FC670FA008B62DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CaMoMaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tamtn.CaMoMaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CaMoMa.app/CaMoMa";
+			};
+			name = Debug;
+		};
+		DBEAF8281FC670FA008B62DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CaMoMaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tamtn.CaMoMaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CaMoMa.app/CaMoMa";
+			};
+			name = Release;
+		};
+		DBEAF82A1FC670FA008B62DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CaMoMaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tamtn.CaMoMaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CaMoMa;
+			};
+			name = Debug;
+		};
+		DBEAF82B1FC670FA008B62DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CaMoMaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tamtn.CaMoMaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CaMoMa;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DBEAF7F31FC670F9008B62DB /* Build configuration list for PBXProject "CaMoMa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBEAF8211FC670FA008B62DB /* Debug */,
+				DBEAF8221FC670FA008B62DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBEAF8231FC670FA008B62DB /* Build configuration list for PBXNativeTarget "CaMoMa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBEAF8241FC670FA008B62DB /* Debug */,
+				DBEAF8251FC670FA008B62DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBEAF8261FC670FA008B62DB /* Build configuration list for PBXNativeTarget "CaMoMaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBEAF8271FC670FA008B62DB /* Debug */,
+				DBEAF8281FC670FA008B62DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBEAF8291FC670FA008B62DB /* Build configuration list for PBXNativeTarget "CaMoMaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBEAF82A1FC670FA008B62DB /* Debug */,
+				DBEAF82B1FC670FA008B62DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DBEAF8021FC670F9008B62DB /* CaMoMa.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DBEAF8031FC670F9008B62DB /* CaMoMa.xcdatamodel */,
+			);
+			currentVersion = DBEAF8031FC670F9008B62DB /* CaMoMa.xcdatamodel */;
+			path = CaMoMa.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DBEAF7F01FC670F9008B62DB /* Project object */;
+}
