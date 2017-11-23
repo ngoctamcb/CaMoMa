@@ -28,7 +28,8 @@ class LoginVC: BaseVC {
     }
     
     func doLogin(password: String) {
-        print(password)
+        let homeVC = storyboard?.instantiateViewController(withIdentifier: "HomeVC")
+        self.present(homeVC!, animated: true, completion: nil)
     }
     
     override func customView() {
