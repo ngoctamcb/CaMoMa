@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		219CA0744AF421744DA7E3FA /* Pods_CaMoMaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62C318388DCAD169847CA391 /* Pods_CaMoMaTests.framework */; };
+		5F62A9A00516C113DCCE1DE1 /* Pods_CaMoMaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01E7E205E2F78709DEC5FDEF /* Pods_CaMoMaUITests.framework */; };
+		B63864E531F223C222CAA1D0 /* Pods_CaMoMa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FF0556074D3B9DDA02D3739 /* Pods_CaMoMa.framework */; };
 		DBEAF7FC1FC670F9008B62DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEAF7FB1FC670F9008B62DB /* AppDelegate.swift */; };
 		DBEAF7FE1FC670F9008B62DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEAF7FD1FC670F9008B62DB /* ViewController.swift */; };
 		DBEAF8011FC670F9008B62DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBEAF7FF1FC670F9008B62DB /* Main.storyboard */; };
@@ -35,6 +38,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01E7E205E2F78709DEC5FDEF /* Pods_CaMoMaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CaMoMaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A05B4F51168351C1202D697 /* Pods-CaMoMaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CaMoMaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CaMoMaUITests/Pods-CaMoMaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3FF0556074D3B9DDA02D3739 /* Pods_CaMoMa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CaMoMa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62C318388DCAD169847CA391 /* Pods_CaMoMaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CaMoMaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8299CD7998C7341F98BB4C3F /* Pods-CaMoMa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CaMoMa.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CaMoMa/Pods-CaMoMa.debug.xcconfig"; sourceTree = "<group>"; };
+		8D1B9672B41E2100ADA8591D /* Pods-CaMoMaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CaMoMaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CaMoMaTests/Pods-CaMoMaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B86227C9310E2C371C29CE87 /* Pods-CaMoMaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CaMoMaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CaMoMaUITests/Pods-CaMoMaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D60D1177CE77C0BF18AE7E37 /* Pods-CaMoMaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CaMoMaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CaMoMaTests/Pods-CaMoMaTests.release.xcconfig"; sourceTree = "<group>"; };
 		DBEAF7F81FC670F9008B62DB /* CaMoMa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CaMoMa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBEAF7FB1FC670F9008B62DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBEAF7FD1FC670F9008B62DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +60,7 @@
 		DBEAF81A1FC670FA008B62DB /* CaMoMaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CaMoMaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBEAF81E1FC670FA008B62DB /* CaMoMaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaMoMaUITests.swift; sourceTree = "<group>"; };
 		DBEAF8201FC670FA008B62DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E12489480765606054EC5B0D /* Pods-CaMoMa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CaMoMa.release.xcconfig"; path = "Pods/Target Support Files/Pods-CaMoMa/Pods-CaMoMa.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B63864E531F223C222CAA1D0 /* Pods_CaMoMa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				219CA0744AF421744DA7E3FA /* Pods_CaMoMaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +84,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F62A9A00516C113DCCE1DE1 /* Pods_CaMoMaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		217D6A5F3A7553D543349F1A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3FF0556074D3B9DDA02D3739 /* Pods_CaMoMa.framework */,
+				62C318388DCAD169847CA391 /* Pods_CaMoMaTests.framework */,
+				01E7E205E2F78709DEC5FDEF /* Pods_CaMoMaUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		66CBD68B5B1DF31152208244 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8299CD7998C7341F98BB4C3F /* Pods-CaMoMa.debug.xcconfig */,
+				E12489480765606054EC5B0D /* Pods-CaMoMa.release.xcconfig */,
+				8D1B9672B41E2100ADA8591D /* Pods-CaMoMaTests.debug.xcconfig */,
+				D60D1177CE77C0BF18AE7E37 /* Pods-CaMoMaTests.release.xcconfig */,
+				B86227C9310E2C371C29CE87 /* Pods-CaMoMaUITests.debug.xcconfig */,
+				2A05B4F51168351C1202D697 /* Pods-CaMoMaUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DBEAF7EF1FC670F9008B62DB = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +121,8 @@
 				DBEAF8121FC670FA008B62DB /* CaMoMaTests */,
 				DBEAF81D1FC670FA008B62DB /* CaMoMaUITests */,
 				DBEAF7F91FC670F9008B62DB /* Products */,
+				66CBD68B5B1DF31152208244 /* Pods */,
+				217D6A5F3A7553D543349F1A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,9 +175,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DBEAF8231FC670FA008B62DB /* Build configuration list for PBXNativeTarget "CaMoMa" */;
 			buildPhases = (
+				4274163A4860065E87C1D7EF /* [CP] Check Pods Manifest.lock */,
 				DBEAF7F41FC670F9008B62DB /* Sources */,
 				DBEAF7F51FC670F9008B62DB /* Frameworks */,
 				DBEAF7F61FC670F9008B62DB /* Resources */,
+				2799EE20001DC6307208796B /* [CP] Embed Pods Frameworks */,
+				EBCB08BC34D1E34B249ED9C7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +195,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DBEAF8261FC670FA008B62DB /* Build configuration list for PBXNativeTarget "CaMoMaTests" */;
 			buildPhases = (
+				48E6F3F55DA332D1D9093FAD /* [CP] Check Pods Manifest.lock */,
 				DBEAF80B1FC670FA008B62DB /* Sources */,
 				DBEAF80C1FC670FA008B62DB /* Frameworks */,
 				DBEAF80D1FC670FA008B62DB /* Resources */,
+				B282CFC85B14115BF51CDCAF /* [CP] Embed Pods Frameworks */,
+				FE0847CD03B8C7C9CDCAF830 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +216,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DBEAF8291FC670FA008B62DB /* Build configuration list for PBXNativeTarget "CaMoMaUITests" */;
 			buildPhases = (
+				0851FA2068A157306230180A /* [CP] Check Pods Manifest.lock */,
 				DBEAF8161FC670FA008B62DB /* Sources */,
 				DBEAF8171FC670FA008B62DB /* Frameworks */,
 				DBEAF8181FC670FA008B62DB /* Resources */,
+				F71EBF71630CD06568860714 /* [CP] Embed Pods Frameworks */,
+				67D4E86375CCB9092A7FCBED /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,6 +305,158 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0851FA2068A157306230180A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CaMoMaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2799EE20001DC6307208796B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CaMoMa/Pods-CaMoMa-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CaMoMa/Pods-CaMoMa-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4274163A4860065E87C1D7EF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CaMoMa-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		48E6F3F55DA332D1D9093FAD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CaMoMaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67D4E86375CCB9092A7FCBED /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CaMoMaUITests/Pods-CaMoMaUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B282CFC85B14115BF51CDCAF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CaMoMaTests/Pods-CaMoMaTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBCB08BC34D1E34B249ED9C7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CaMoMa/Pods-CaMoMa-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F71EBF71630CD06568860714 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CaMoMaUITests/Pods-CaMoMaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE0847CD03B8C7C9CDCAF830 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CaMoMaTests/Pods-CaMoMaTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DBEAF7F41FC670F9008B62DB /* Sources */ = {
@@ -428,6 +629,7 @@
 		};
 		DBEAF8241FC670FA008B62DB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8299CD7998C7341F98BB4C3F /* Pods-CaMoMa.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -443,6 +645,7 @@
 		};
 		DBEAF8251FC670FA008B62DB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E12489480765606054EC5B0D /* Pods-CaMoMa.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -458,6 +661,7 @@
 		};
 		DBEAF8271FC670FA008B62DB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D1B9672B41E2100ADA8591D /* Pods-CaMoMaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -474,6 +678,7 @@
 		};
 		DBEAF8281FC670FA008B62DB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D60D1177CE77C0BF18AE7E37 /* Pods-CaMoMaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +695,7 @@
 		};
 		DBEAF82A1FC670FA008B62DB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B86227C9310E2C371C29CE87 /* Pods-CaMoMaUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -505,6 +711,7 @@
 		};
 		DBEAF82B1FC670FA008B62DB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A05B4F51168351C1202D697 /* Pods-CaMoMaUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
