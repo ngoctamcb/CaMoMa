@@ -33,6 +33,7 @@ class LoginVC: BaseVC {
     }
     
     override func customView() {
+        txtPassword.becomeFirstResponder()
         txtPassword.keyboardType = .numberPad
     }
 

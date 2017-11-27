@@ -10,9 +10,11 @@
 		219CA0744AF421744DA7E3FA /* Pods_CaMoMaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62C318388DCAD169847CA391 /* Pods_CaMoMaTests.framework */; };
 		5F62A9A00516C113DCCE1DE1 /* Pods_CaMoMaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01E7E205E2F78709DEC5FDEF /* Pods_CaMoMaUITests.framework */; };
 		B63864E531F223C222CAA1D0 /* Pods_CaMoMa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FF0556074D3B9DDA02D3739 /* Pods_CaMoMa.framework */; };
+		DB33FF3E1FCB1C1800CA8D8A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB33FF3D1FCB1C1800CA8D8A /* GoogleService-Info.plist */; };
 		DB75516C1FC68789002167C2 /* RxExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB75516B1FC68789002167C2 /* RxExtension.swift */; };
 		DB75516E1FC6B40D002167C2 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB75516D1FC6B40D002167C2 /* BaseVC.swift */; };
 		DB7551701FC6B487002167C2 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB75516F1FC6B487002167C2 /* ViewExtension.swift */; };
+		DB7551721FC6C4FD002167C2 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7551711FC6C4FD002167C2 /* HomeVC.swift */; };
 		DBEAF7FC1FC670F9008B62DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEAF7FB1FC670F9008B62DB /* AppDelegate.swift */; };
 		DBEAF7FE1FC670F9008B62DB /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEAF7FD1FC670F9008B62DB /* Login.swift */; };
 		DBEAF8011FC670F9008B62DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBEAF7FF1FC670F9008B62DB /* Main.storyboard */; };
@@ -49,9 +51,11 @@
 		8D1B9672B41E2100ADA8591D /* Pods-CaMoMaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CaMoMaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CaMoMaTests/Pods-CaMoMaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B86227C9310E2C371C29CE87 /* Pods-CaMoMaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CaMoMaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CaMoMaUITests/Pods-CaMoMaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D60D1177CE77C0BF18AE7E37 /* Pods-CaMoMaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CaMoMaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CaMoMaTests/Pods-CaMoMaTests.release.xcconfig"; sourceTree = "<group>"; };
+		DB33FF3D1FCB1C1800CA8D8A /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DB75516B1FC68789002167C2 /* RxExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxExtension.swift; sourceTree = "<group>"; };
 		DB75516D1FC6B40D002167C2 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		DB75516F1FC6B487002167C2 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		DB7551711FC6C4FD002167C2 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		DBEAF7F81FC670F9008B62DB /* CaMoMa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CaMoMa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBEAF7FB1FC670F9008B62DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBEAF7FD1FC670F9008B62DB /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
@@ -120,11 +124,20 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		DB33FF3A1FCB10EC00CA8D8A /* appdelegate */ = {
+			isa = PBXGroup;
+			children = (
+				DBEAF7FB1FC670F9008B62DB /* AppDelegate.swift */,
+			);
+			path = appdelegate;
+			sourceTree = "<group>";
+		};
 		DB7551691FC68767002167C2 /* view */ = {
 			isa = PBXGroup;
 			children = (
 				DBEAF7FD1FC670F9008B62DB /* Login.swift */,
 				DB75516D1FC6B40D002167C2 /* BaseVC.swift */,
+				DB7551711FC6C4FD002167C2 /* HomeVC.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -141,6 +154,7 @@
 		DBEAF7EF1FC670F9008B62DB = {
 			isa = PBXGroup;
 			children = (
+				DB33FF3D1FCB1C1800CA8D8A /* GoogleService-Info.plist */,
 				DBEAF7FA1FC670F9008B62DB /* CaMoMa */,
 				DBEAF8121FC670FA008B62DB /* CaMoMaTests */,
 				DBEAF81D1FC670FA008B62DB /* CaMoMaUITests */,
@@ -163,9 +177,9 @@
 		DBEAF7FA1FC670F9008B62DB /* CaMoMa */ = {
 			isa = PBXGroup;
 			children = (
+				DB33FF3A1FCB10EC00CA8D8A /* appdelegate */,
 				DB75516A1FC68774002167C2 /* Extensions */,
 				DB7551691FC68767002167C2 /* view */,
-				DBEAF7FB1FC670F9008B62DB /* AppDelegate.swift */,
 				DBEAF7FF1FC670F9008B62DB /* Main.storyboard */,
 				DBEAF8051FC670F9008B62DB /* Assets.xcassets */,
 				DBEAF8071FC670F9008B62DB /* LaunchScreen.storyboard */,
@@ -312,6 +326,7 @@
 				DBEAF8091FC670F9008B62DB /* LaunchScreen.storyboard in Resources */,
 				DBEAF8061FC670F9008B62DB /* Assets.xcassets in Resources */,
 				DBEAF8011FC670F9008B62DB /* Main.storyboard in Resources */,
+				DB33FF3E1FCB1C1800CA8D8A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,13 +372,21 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CaMoMa/Pods-CaMoMa-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -489,6 +512,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB7551701FC6B487002167C2 /* ViewExtension.swift in Sources */,
+				DB7551721FC6C4FD002167C2 /* HomeVC.swift in Sources */,
 				DBEAF7FE1FC670F9008B62DB /* Login.swift in Sources */,
 				DBEAF8041FC670F9008B62DB /* CaMoMa.xcdatamodeld in Sources */,
 				DBEAF7FC1FC670F9008B62DB /* AppDelegate.swift in Sources */,

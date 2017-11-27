@@ -48,5 +48,56 @@
             </objects>
             <point key="canvasLocation" x="32.799999999999997" y="31.934032983508249"/>
         </scene>
+        <!--HomeVC-->
+        <scene sceneID="skg-nO-f1N">
+            <objects>
+                <viewController storyboardIdentifier="HomeVC" id="5za-gC-BzY" customClass="HomeVC" customModule="CaMoMa" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="dQj-Ce-3kx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dr2-tL-Qoe">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Số Dư" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ehl-dA-dor">
+                                        <rect key="frame" x="8" y="35" width="68" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="12.000.000đ" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F7D-CU-gEK">
+                                        <rect key="frame" x="124" y="41" width="282" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.86144892718493393" green="0.78485669609632513" blue="0.87835977979274615" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="vjP-NN-gq6"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Hhk-0q-b3F" firstAttribute="trailing" secondItem="Dr2-tL-Qoe" secondAttribute="trailing" id="8Gc-eY-fnB"/>
+                            <constraint firstItem="Hhk-0q-b3F" firstAttribute="top" secondItem="Dr2-tL-Qoe" secondAttribute="top" constant="20" id="EkS-Rn-1md"/>
+                            <constraint firstItem="Dr2-tL-Qoe" firstAttribute="centerX" secondItem="Hhk-0q-b3F" secondAttribute="centerX" id="OiF-G5-8UX"/>
+                            <constraint firstItem="Dr2-tL-Qoe" firstAttribute="width" secondItem="dQj-Ce-3kx" secondAttribute="width" id="PVI-FK-MML"/>
+                            <constraint firstItem="Dr2-tL-Qoe" firstAttribute="leading" secondItem="Hhk-0q-b3F" secondAttribute="leading" id="cde-uS-qjm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Hhk-0q-b3F"/>
+                    </view>
+                    <connections>
+                        <outlet property="lbMoney" destination="F7D-CU-gEK" id="JcN-w8-tC8"/>
+                        <outlet property="moneyView" destination="Dr2-tL-Qoe" id="pCw-Uf-61m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H3n-Gk-pYb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1740.5797101449277" y="18.75"/>
+        </scene>
     </scenes>
 </document>

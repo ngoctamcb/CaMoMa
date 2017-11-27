@@ -8,6 +8,9 @@ target 'CaMoMa' do
   # Pods for CaMoMa
     pod 'RxSwift',    '~> 4.0'
     pod 'RxCocoa',    '~> 4.0'
+    pod 'Firebase/Core'
+    pod 'Firebase/Auth'
+    pod 'Firebase/Database'
   target 'CaMoMaTests' do
     inherit! :search_paths
     # Pods for testing
