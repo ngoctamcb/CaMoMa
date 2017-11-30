@@ -9,6 +9,7 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import AudioToolbox
 
 class LoginVC: BaseVC {
     
@@ -21,15 +22,23 @@ class LoginVC: BaseVC {
     override func react() {
         txtPassword.rx.text
             .orEmpty
-            .filter({$0.count == 6 && $0 == "123456"})
+            .filter({$0.count == 6})
             .subscribe(onNext: { [unowned self] password in
                 self.doLogin(password: password)
             }) => disposeBag
     }
     
     func doLogin(password: String) {
-        let homeVC = storyboard?.instantiateViewController(withIdentifier: "HomeVC")
-        self.present(homeVC!, animated: true, completion: nil)
+        
+        if  password == "123456" {
+            let tabbarVC = storyboard?.instantiateViewController(withIdentifier: "tabbar")
+            self.present(tabbarVC!, animated: true, completion: nil)
+        } else {
+            AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
+            self.showToast(message: "Password is incorrect")
+        }
+        
+       
     }
     
     override func customView() {

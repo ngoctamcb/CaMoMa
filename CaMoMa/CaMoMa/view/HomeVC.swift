@@ -11,23 +11,24 @@ import Foundation
 import Firebase
 import FirebaseDatabase
 
-
-
 class HomeVC: BaseVC {
 
+    @IBOutlet weak var tbHistory: UITableView!
     @IBOutlet weak var lbMoney: UILabel!
     @IBOutlet weak var moneyView: UIView!
-    private var sodu: Int?
     
-    var ref: DatabaseReference!
-
+    var listEvent: [Event] = []
+    
+    private var balance: Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        ref = Database.database().reference(fromURL: "https://camoma-61de8.firebaseio.com/")
-        getMoneyFromFireBase()
+        tbHistory.delegate = self
+        tbHistory.dataSource = self
+        getBalance()
+        getListEvent()
         
-        setOnClickMoneyView()
+//        setOnClickMoneyView()
     }
 
     override func didReceiveMemoryWarning() {
@@ -35,16 +36,40 @@ class HomeVC: BaseVC {
         // Dispose of any resources that can be recreated.
     }
     
-    func getMoneyFromFireBase() {
-        self.ref.child("sodu").observe(DataEventType.value) { (snap) in
+    override func getBalance() {
+        self.ref.child("balance").observe(DataEventType.value) { (snap) in
             if let sodu = snap.value as? Int {
-                self.sodu = sodu
+                self.balance = sodu
                 self.lbMoney.text = String(sodu.formattedWithSeparator) + "đ"
                 let format = NumberFormatter()
                 format.numberStyle = .currency
-                
             }
         }
+    }
+    
+    func getListEvent() {
+        self.ref.child("listEvent").observe(DataEventType.childAdded) { [weak self] (snapEvent) in
+            
+            guard let strongSelf = self else { return }
+            let id: String = snapEvent.key
+            guard let date = snapEvent.childSnapshot(forPath: "date").value as? String,
+                    let money = snapEvent.childSnapshot(forPath: "money").value as? Int,
+                        let note = snapEvent.childSnapshot(forPath: "note").value as? String
+                
+            else {
+                return
+            }
+            
+            let event = Event(id: id, money: money, note: note, date: date)
+            strongSelf.listEvent.append(event)
+            
+            DispatchQueue.main.async {
+                print(strongSelf.listEvent.count)
+                strongSelf.tbHistory.reloadData()
+            }
+            
+        }
+        
     }
     
     override func react() {
@@ -80,8 +105,35 @@ class HomeVC: BaseVC {
     }
     
     func addMoney(withMoney money: Int) {
-        self.sodu = self.sodu! + money
-        self.ref.child("sodu").setValue(sodu)
+        self.balance = self.balance! + money
+        self.ref.child("sodu").setValue(balance)
     }
 
+}
+
+extension HomeVC: UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return self.listEvent.count
+        
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! HomeTableViewCell
+        
+        cell.configCell(event: listEvent[indexPath.row])
+
+        return cell
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.showToast(message: listEvent[indexPath.row].note!)
+    }
+
+    
 }

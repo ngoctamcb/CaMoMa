@@ -68,7 +68,7 @@ func ~><T>(event: ControlEvent<T>, variable: Variable<T>) -> Disposable {
 }
 
 // MARK: - Add to dispose bag shorthand
-infix operator =>: DisposablePrecedence
+    infix operator =>: DisposablePrecedence
 
 func =>(disposable: Disposable?, bag: DisposeBag) {
     disposable?.addDisposableTo(bag)

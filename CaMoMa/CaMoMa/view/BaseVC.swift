@@ -10,15 +10,19 @@ import UIKit
 import Foundation
 import RxCocoa
 import RxSwift
+import FirebaseDatabase
 
 class BaseVC: UIViewController {
     var disposeBag: DisposeBag!
-    
+    var ref: DatabaseReference!
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.disposeBag = DisposeBag()
+        ref = Database.database().reference(fromURL: "https://camoma-61de8.firebaseio.com/")
+        getBalance()
         hideKeyboardWhenTouchOutside()
         customView()
-        self.disposeBag = DisposeBag()
         react()
     }
     
@@ -32,6 +36,10 @@ class BaseVC: UIViewController {
     
     func hideKeyboardWhenTouchOutside() {
         self.setHidenKeyboard()
+    }
+    
+    func getBalance() {
+        
     }
 
     override func didReceiveMemoryWarning() {
